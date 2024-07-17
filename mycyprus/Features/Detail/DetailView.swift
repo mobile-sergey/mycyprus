@@ -8,9 +8,9 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct ListDetailView: View {
+struct DetailView: View {
     
-    let store: StoreOf<ListDetailFeature>
+    let store: StoreOf<DetailFeature>
     
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -18,9 +18,9 @@ struct ListDetailView: View {
 }
 
 #Preview {
-    ListDetailView(
-        store: Store(initialState: ListDetailFeature.State()) {
-            ListDetailFeature()
+    DetailView(
+        store: Store(initialState: DetailFeature.State()) {
+            DetailFeature()
         }
     )
 }

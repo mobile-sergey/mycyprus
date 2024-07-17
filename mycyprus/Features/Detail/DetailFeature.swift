@@ -9,7 +9,7 @@ import Foundation
 import ComposableArchitecture
 
 @Reducer
-struct ListDetailFeature {
+struct DetailFeature {
     
     @ObservableState
     struct State: Equatable {
