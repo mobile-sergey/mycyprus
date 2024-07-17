@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5A695B72C482ACB00167E36 /* mycyprusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695B62C482ACB00167E36 /* mycyprusApp.swift */; };
-		A5A695B92C482ACB00167E36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695B82C482ACB00167E36 /* ContentView.swift */; };
+		A5A695B72C482ACB00167E36 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695B62C482ACB00167E36 /* MainApp.swift */; };
+		A5A695B92C482ACB00167E36 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695B82C482ACB00167E36 /* MainView.swift */; };
 		A5A695BB2C482ACC00167E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A695BA2C482ACC00167E36 /* Assets.xcassets */; };
-		A5A695BE2C482ACC00167E36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A695BD2C482ACC00167E36 /* Preview Assets.xcassets */; };
+		A5A695BE2C482ACC00167E36 /* Preview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A695BD2C482ACC00167E36 /* Preview.xcassets */; };
 		A5A695C62C482C9B00167E36 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A5A695C52C482C9B00167E36 /* ComposableArchitecture */; };
 		A5A695C82C482E0100167E36 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A5A695C72C482E0100167E36 /* ComposableArchitecture */; };
 		A5A695CB2C482E5900167E36 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A5A695CA2C482E5900167E36 /* Alamofire */; };
 		A5A695CD2C482E5900167E36 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A5A695CC2C482E5900167E36 /* AlamofireDynamic */; };
+		A5A695D32C48394E00167E36 /* ListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695D22C48394E00167E36 /* ListFeature.swift */; };
+		A5A695D52C48395900167E36 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695D42C48395900167E36 /* ListView.swift */; };
+		A5A695D72C48396600167E36 /* ListDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695D62C48396600167E36 /* ListDetailFeature.swift */; };
+		A5A695DB2C483A3F00167E36 /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A695DA2C483A3F00167E36 /* ListDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5A695B32C482ACB00167E36 /* mycyprus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mycyprus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5A695B62C482ACB00167E36 /* mycyprusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mycyprusApp.swift; sourceTree = "<group>"; };
-		A5A695B82C482ACB00167E36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5A695B62C482ACB00167E36 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		A5A695B82C482ACB00167E36 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A5A695BA2C482ACC00167E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A5A695BD2C482ACC00167E36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5A695BD2C482ACC00167E36 /* Preview.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Preview.xcassets; sourceTree = "<group>"; };
+		A5A695D22C48394E00167E36 /* ListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFeature.swift; sourceTree = "<group>"; };
+		A5A695D42C48395900167E36 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A5A695D62C48396600167E36 /* ListDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailFeature.swift; sourceTree = "<group>"; };
+		A5A695DA2C483A3F00167E36 /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +51,9 @@
 		A5A695AA2C482ACB00167E36 = {
 			isa = PBXGroup;
 			children = (
-				A5A695B52C482ACB00167E36 /* mycyprus */,
+				A5A695CF2C48382F00167E36 /* Assets */,
+				A5A695CE2C4837F700167E36 /* Features */,
+				A5A695B62C482ACB00167E36 /* MainApp.swift */,
 				A5A695B42C482ACB00167E36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,23 +66,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5A695B52C482ACB00167E36 /* mycyprus */ = {
+		A5A695CE2C4837F700167E36 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				A5A695B62C482ACB00167E36 /* mycyprusApp.swift */,
-				A5A695B82C482ACB00167E36 /* ContentView.swift */,
-				A5A695BA2C482ACC00167E36 /* Assets.xcassets */,
-				A5A695BC2C482ACC00167E36 /* Preview Content */,
+				A5A695D02C4838F400167E36 /* List */,
+				A5A695D12C4838FD00167E36 /* ListDetail */,
+				A5A695B82C482ACB00167E36 /* MainView.swift */,
 			);
-			path = mycyprus;
+			path = Features;
 			sourceTree = "<group>";
 		};
-		A5A695BC2C482ACC00167E36 /* Preview Content */ = {
+		A5A695CF2C48382F00167E36 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				A5A695BD2C482ACC00167E36 /* Preview Assets.xcassets */,
+				A5A695BD2C482ACC00167E36 /* Preview.xcassets */,
+				A5A695BA2C482ACC00167E36 /* Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A5A695D02C4838F400167E36 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A5A695D22C48394E00167E36 /* ListFeature.swift */,
+				A5A695D42C48395900167E36 /* ListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A5A695D12C4838FD00167E36 /* ListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A5A695D62C48396600167E36 /* ListDetailFeature.swift */,
+				A5A695DA2C483A3F00167E36 /* ListDetailView.swift */,
+			);
+			path = ListDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +146,7 @@
 			};
 			buildConfigurationList = A5A695AE2C482ACB00167E36 /* Build configuration list for PBXProject "mycyprus" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -144,7 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A695BE2C482ACC00167E36 /* Preview Assets.xcassets in Resources */,
+				A5A695BE2C482ACC00167E36 /* Preview.xcassets in Resources */,
 				A5A695BB2C482ACC00167E36 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,8 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A695B92C482ACB00167E36 /* ContentView.swift in Sources */,
-				A5A695B72C482ACB00167E36 /* mycyprusApp.swift in Sources */,
+				A5A695D52C48395900167E36 /* ListView.swift in Sources */,
+				A5A695D32C48394E00167E36 /* ListFeature.swift in Sources */,
+				A5A695B92C482ACB00167E36 /* MainView.swift in Sources */,
+				A5A695DB2C483A3F00167E36 /* ListDetailView.swift in Sources */,
+				A5A695B72C482ACB00167E36 /* MainApp.swift in Sources */,
+				A5A695D72C48396600167E36 /* ListDetailFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"mycyprus/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Assets/Preview.xcassets;
 				DEVELOPMENT_TEAM = 5HDD9A94JL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -319,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"mycyprus/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Assets/Preview.xcassets;
 				DEVELOPMENT_TEAM = 5HDD9A94JL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
