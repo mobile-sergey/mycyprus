@@ -6,17 +6,29 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ListView: View {
+    
+    let store: StoreOf<ListFeature>
+    
     var body: some View {
         List{
-            ListDetailView()
-            ListDetailView()
-            ListDetailView()
+            ForEach(1...3, id: \.self) {_ in
+                ListDetailView(
+                    store: Store(initialState: ListDetailFeature.State()) {
+                        ListDetailFeature()
+                    }
+                )
+            }
         }
     }
 }
 
 #Preview {
-    ListView()
+    ListView(
+      store: Store(initialState: ListFeature.State()) {
+          ListFeature()
+      }
+    )
 }

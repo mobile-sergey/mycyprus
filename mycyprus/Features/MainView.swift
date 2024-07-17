@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct MainView: View {
     var body: some View {
         VStack {
-            ListView()
+            ListView(
+                store: Store(initialState: ListFeature.State()) {
+                    ListFeature()
+                }
+            )
         }
         .padding()
     }
